@@ -10,5 +10,6 @@
 
 secure_newrelic = Chef::EncryptedDataBagItem.load('secure', 'newrelic')
 node.set['newrelic']['license'] = secure_newrelic['license']
+node.set['newrelic']['server_monitoring']['license'] = secure_newrelic['license']
 
 include_recipe 'newrelic'
