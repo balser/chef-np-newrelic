@@ -1,5 +1,7 @@
 source 'https://api.berkshelf.com'
 
-cookbook 'newrelic', '1.0.0'
+cookbook 'newrelic',
+  git: "https://github.com/escapestudios-cookbooks/newrelic.git",
+  ref: "master"
 
 metadata
